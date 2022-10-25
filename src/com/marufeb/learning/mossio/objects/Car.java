@@ -13,6 +13,13 @@ public class Car extends Vehicle {
         final String s = String.valueOf(2); // Chiamata a con metodo statico
         final int wheelNumber1 = car.wheelNumber;
         final int wheelNumber2 = car.getWheelNumber();
+        Vehicle vehicle = new Vehicle(1, "") {
+            @Override
+            public void drive() {
+
+            }
+        };
+        Car car1 = new Car();
     }
 
     @Override
@@ -22,5 +29,10 @@ public class Car extends Vehicle {
                 "wheelNumber=" + wheelNumber +
                 ", targa='" + targa + '\'' +
                 '}';
+    }
+
+    @Override
+    public void drive() {
+
     }
 }

@@ -1,6 +1,6 @@
 package com.marufeb.learning.mossio.objects;
 
-public class Vehicle {
+public abstract class Vehicle extends Scaffolding {
     protected final int wheelNumber;
     protected String targa;
 
@@ -27,5 +27,9 @@ public class Vehicle {
                 "wheelNumber=" + wheelNumber +
                 ", targa='" + targa + '\'' +
                 "}\n";
+    }
+    @Override
+    public void clacson() {
+
     }
 }
